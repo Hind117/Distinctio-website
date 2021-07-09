@@ -1,5 +1,5 @@
 :root{
-    --primary-color: mediumseagreen;
+    --primary-color: #f7882f;
 }
 /* utilities */
 .container{
@@ -62,8 +62,8 @@
 
 .btn-outline:hover{
     background-color: #fff;
-    border: 1px solid mediumseagreen;
-    color: mediumseagreen;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .grid-3{

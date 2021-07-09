@@ -3,9 +3,9 @@
 
 :root{
     --primary-color: mediumseagreen;
-    --secondary-color: rgb(34, 139, 81);
-    --dark-color: rgb(25, 77, 48);
-    --light-color: #f4f4f4;
+    --secondary-color: #f7c331;
+    --dark-color: #6b7a8f;
+    --light-color: #dcc7aa;
 }
 
 *{
@@ -76,7 +76,7 @@ img{
 
 .navbar li a:hover{
     background-color: #fff;
-    color: mediumseagreen;
+    color: var(--primary-color);
     border-radius: 7px;
     font-weight: bold;
 }
@@ -149,8 +149,8 @@ img{
 }
 .showcase-form .btn:hover{
     background-color: #fff;
-    color: mediumseagreen;
-    border: 1px solid mediumseagreen;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     
 }
 
@@ -188,8 +188,16 @@ img{
     font-weight: bold;
 }
 
-/* cli */
-
+/* Cli */
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
 
 
 /* types */
@@ -237,7 +245,7 @@ img{
 }
 
 /* features */
-.features-head img{
+.features-head img, .docs-head img{
     width: 200px;
     justify-self: flex-end;
 }
@@ -278,6 +286,7 @@ img{
     .showcase .grid,
     .stats .grid,
     .types .grid,
+    .cli .grid,
     .footer .grid,
     .footer .grid-3,
     .features-head .grid,
