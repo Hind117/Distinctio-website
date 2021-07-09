@@ -6,6 +6,8 @@
     --secondary-color: #f7c331;
     --dark-color: #6b7a8f;
     --light-color: #dcc7aa;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
 }
 
 *{
@@ -40,6 +42,12 @@ p{
 
 img{
     width: 100%;
+}
+
+code, pre{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
 .logo{
@@ -200,20 +208,20 @@ img{
   }
 
 
-/* types */
-.types .grid{
+/* cloud */
+.cloud .grid{
     grid-template-columns: 4fr 3fr;
     
 }
 
-.types img{
+.cloud img{
     width: 90%;
     padding: 20px 0;
     
 }
 
-/* browsers */
-.browsers .card{
+/* languages */
+.languages .card{
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
@@ -223,22 +231,22 @@ img{
     transition: all 0.2s ease-in;
 }
 
-.browsers .card:hover{
+.languages .card:hover{
     transform: translateY(-13px);
     
 }
 
-.browsers .card img{
+.languages .card img{
     margin: auto;
     width: 60px;
 }
 
-.browsers .card h4{
+.languages .card h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.browsers .flex{
+.languages .flex{
     align-items: stretch;
     flex-wrap: wrap;
     
@@ -269,6 +277,27 @@ img{
 
 .features-main .grid > *:nth-child(2){
     grid-column: 1/3;
+}
+
+/* docs */
+.docs-main h3{
+    margin: 20px 0;
+}
+
+.docs-main .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.docs-main nav li{
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px rgb(163, 163, 163) solid;
+}
+
+.docs-main a:hover{
+    font-weight: bold;
 }
 
 /* footer */
